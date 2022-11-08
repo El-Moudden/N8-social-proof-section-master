@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1450px;
+    
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 1110px;
+    /* margin-left: 170px; */
+    grid-template-columns: 555px 555px;
+    grid-template-rows: 300px 300px;
+  
+}
+.cards {
+    width: 1110px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 36px;
+    height: 300px;
+
+    
+}
+.description {
+    height: 300px;
+    width: 555px;
+    padding: 10px 75px 10px 36px;
+    
+    
+}
+.description h1 {
+    color: #551e57;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.description p {
+    color: #aba9aa;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    padding-right: 37px;
+}
+.ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 555px;
+    padding: 10px 100px 10px 0;
+}
+.ratings .review {
+    display: flex;
+    width: 388px;
+    padding: 15px 20px;
+    background: #f7f2f8;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    
+}
+.ratings .review2 {
+    transform: translate(50px , 0);
+}
+.ratings .review3 {
+    transform: translate(100px , 0);
+
+}
+.cards .card {
+    border-radius: 10px;
+    background-color: #502050;
+    width: 330px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.card img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px
+}
+.card .person-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.person-review {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    line-height: 25px;
+    height: 120px;
+}
+
+div.name :first-child{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+div.name :last-child{
+    color:#d876b3;
+    font-size: 15px;
+    font-weight: 500;
+}
+.card1 {
+    margin-top: -35px;
+}
+.card2 {
+    transform: translate(0 ,15px);
+    margin-top: -35px;
+}
+.card3{
+    transform: translate(0,30px);
+    margin-top: -35px;
+}
+.review p {
+    font-weight: 700;
+    color: #502050;
+}
+.review .stars {
+    margin-right: 25px;
+}
+@media (max-width: 375px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 375px;
+        /* height: 667px; */
+        /* height: 2500px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1308px;
+    }
+    .container {
+       display: flex;
+       grid-template-columns: 355px;
+       grid-template-rows: auto auto auto;
+       justify-content: start;
+       gap: 30px;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        width: 355px;
+        padding: 0;
+        /* margin: 100px 0; */
+        height: fit-content;
+    }
+    .description {
+        width: 355px;
+        padding: 0;
+        margin: 0;
+        height: fit-content;
+        /* margin-top: 200px;
+        m */
+
+    }
+    .description h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+    }
+    .description p {
+        text-align: center;
+
+    }
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 355px;
+        /* margin-bottom: 70px; */
+        /* margin: 30px 0 15px 0; */
+        height: fit-content;
+    }
+    .ratings .review {
+        width:355px;
+        padding: 12px 12px;
+        /* margin-bottom: 15px; */
+    }
+    .ratings .review2 {
+        transform: translate(0 , 0);
+    }
+    .ratings .review3 {
+        transform: translate(0 , 0);
+    
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 355px;
+        height: fit-content;
+    }
+    .cards .card {
+        margin: 0;
+        padding: 25px;
+        width: 355px;
+        height: fit-content;
+
+    }
+}
